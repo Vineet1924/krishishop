@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResellerProfileFragment"
+    android:background="@color/mainBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/ProfileResellerLY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_shape">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/noimg"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/btnEnd"
+                        app:civ_border_width="8dp" />
+
+                    <TextView
+                        android:id="@+id/txtChangeProfileImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgProfile"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/urbanistbold"
+                        android:text="Change Profile Picture"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iUsername"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ProfileResellerLY"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_baseline_person_24"
+                android:backgroundTint="@color/lottieColor"/>
+
+            <TextView
+                android:id="@+id/txtProfileUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileResellerLY"
+                android:layout_toRightOf="@+id/iUsername"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:text="Username :"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/ProfileUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileResellerLY"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/txtProfileUsername"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:id="@+id/iconUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProfileResellerLY"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/ProfileUsername"
+                android:background="@drawable/ic_baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/iEmail"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtProfileUsername"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_baseline_email_24" />
+
+            <TextView
+                android:id="@+id/txtProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileUsername"
+                android:layout_toRightOf="@+id/iEmail"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Email :"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileUsername"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/txtProfileEmail"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/iPassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ProfileEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_baseline_vpn_key_24" />
+
+            <TextView
+                android:id="@+id/txtProfilePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileEmail"
+                android:layout_toRightOf="@+id/iPassword"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Password :"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ProfilePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileEmail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/txtProfilePassword"
+                android:fontFamily="@font/urbanistbold"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:id="@+id/iconPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProfileEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/ProfilePassword"
+                android:background="@drawable/ic_baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/iCity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ProfilePassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_baseline_location_city_24" />
+
+            <TextView
+                android:id="@+id/txtProfileCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfilePassword"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iCity"
+                android:fontFamily="@font/urbanistbold"
+                android:text="City :"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ProfileCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfilePassword"
+                android:layout_toRightOf="@id/txtProfileCity"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                />
+
+            <ImageButton
+                android:id="@+id/iconCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:layout_below="@+id/ProfilePassword"
+                android:layout_toRightOf="@+id/ProfileCity"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/iPhone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ProfileCity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_baseline_local_phone_24" />
+
+            <TextView
+                android:id="@+id/txtProfilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileCity"
+                android:layout_toRightOf="@+id/iPhone"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Phone :"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/ProfilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileCity"
+                android:layout_toRightOf="@id/txtProfilePhone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/urbanistbold"
+                android:textSize="25dp"
+                android:inputType="phone"
+                />
+
+            <ImageButton
+                android:id="@+id/iconPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:layout_below="@+id/txtProfileCity"
+                android:layout_toRightOf="@+id/ProfilePhone"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/iStoreId"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ProfilePhone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_baseline_store_24" />
+
+            <TextView
+                android:id="@+id/txtProfileStoreId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfilePhone"
+                android:layout_toRightOf="@+id/iStoreId"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Store ID :"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/btnEnd"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/ProfileStoreId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfilePhone"
+                android:layout_toRightOf="@id/txtProfileStoreId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                />
+
+            <ImageButton
+                android:id="@+id/iconStoreId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_edit_24"
+                android:layout_below="@+id/ProfilePhone"
+                android:layout_toRightOf="@+id/ProfileStoreId"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProfileStoreId"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/lottieColor"
+                android:fontFamily="@font/urbanistbold"
+                android:text="History" />
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProfileStoreId"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/lottieColor"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Logout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

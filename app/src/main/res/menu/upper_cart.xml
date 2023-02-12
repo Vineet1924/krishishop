@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/weather"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_wb_sunny_24"
+        />
+
+    <item
+        android:id="@+id/cart"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"
+        />
+
+    <item
+        android:id="@+id/delivery"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_delivery_dining_24"
+        android:iconTint="@color/btnEnd"
+        />
+
+</menu>

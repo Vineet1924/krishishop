@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.krishishop.ChoicesActivity"
+    android:background="@color/mainBackground">
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/choices" />
+
+    <Button
+        android:id="@+id/btnChoice1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/lottieColor"
+        android:fontFamily="@font/urbanistbold"
+        android:letterSpacing="0.05"
+        android:text="@string/admin"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/btnChoice2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChoice1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/lottieColor"
+        android:fontFamily="@font/urbanistbold"
+        android:letterSpacing="0.05"
+        android:text="@string/reseller"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+    <Button
+        android:id="@+id/btnChoice3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChoice2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:letterSpacing="0.05"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/lottieColor"
+        android:text="@string/farmer"
+        android:textColor="@color/white"
+        android:fontFamily="@font/urbanistbold"
+        android:textSize="26dp"
+        />
+    <Button
+        android:id="@+id/btnChoice4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChoice3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/lottieColor"
+        android:text="@string/user"
+        android:textColor="@color/white"
+        android:fontFamily="@font/urbanistbold"
+        android:letterSpacing="0.05"
+        android:textSize="26dp"
+        />
+
+</RelativeLayout>

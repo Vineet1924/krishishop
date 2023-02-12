@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+        exclude 'mozilla/public-suffix-list.txt'
+    }
+
+
+//    configurations {
+//        implementation.exclude module:'proto-google-common-protos'
+//        implementation.exclude module:'protolite-well-known-types'
+//        implementation.exclude module:'protobuf-lite'
+//        implementation.exclude module:'guava'
+//        implementation.exclude module:'protobuf-lite'
+//    }
+
+    defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
+        applicationId "com.example.app.krishishop"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+//        targetSdkVersion("S")
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.api-client:google-api-client:1.33.1'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.google.firebase:firebase-analytics:20.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.7'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+    implementation 'com.google.okhttp:okhttp:20120626'
+    implementation 'io.grpc:grpc-okhttp:1.43.2'
+    implementation 'com.google.firebase:firebase-appdistribution-gradle:3.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.8.1'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    def lottieVersion = '4.2.2'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.google.gms:google-services:4.3.10'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+    //rounded image view
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //for weather api
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+
+    //floating action button
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    //razor pay
+    implementation 'com.razorpay:checkout:1.6.16'
+}

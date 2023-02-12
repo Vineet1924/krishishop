@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lottieColor"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Date : "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/pDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanistbold"
+                android:text="01/01/1111"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay1"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtPName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Product Name : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/pName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtPName"
+                android:fontFamily="@font/urbanistbold"
+                android:text="product name"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtPQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pName"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Product Quantity : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/pQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pName"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtPQuantity"
+                android:text="5"
+                android:fontFamily="@font/urbanistbold"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

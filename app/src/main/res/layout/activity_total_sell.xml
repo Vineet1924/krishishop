@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refLay"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".TotalSellActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/roundedbackground"
+            android:backgroundTint="@color/lottieColor"
+            android:elevation="8dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Total Sell History"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp"
+            android:src="@drawable/total_sell" />
+
+        <EditText
+            android:id="@+id/search_box"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/searchbox"
+            android:drawableRight="@drawable/search"
+            android:drawableTint="@color/lottieColor"
+            android:drawablePadding="5dp"
+            android:elevation="3dp"
+            android:maxLines="1"
+            android:fontFamily="@font/urbanistbold"
+            android:hint="Search Your Item Here..."
+            android:padding="13dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="-8dp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btnSearchDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Search by Date"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnSearchDate"
+                android:visibility="gone"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/white"
+                android:theme="@style/DialogTheme"
+                android:elevation="8dp"
+                android:layout_marginBottom="15dp"
+                />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTotalSell"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_box"
+            android:layout_above="@+id/rel"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

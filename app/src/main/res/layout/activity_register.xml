@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context="com.example.app.krishishop.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgLoginBack"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:alpha="0.7"
+        android:scaleType="fitStart"
+        android:src="@drawable/img_register" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imgLoginBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-70dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="REGISTER"
+        android:textColor="@color/lottieColor"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:hint="enter Username"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:layout_below="@+id/edtUsername"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:hint="enter Email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/txtCreatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/urbanistbold"
+        android:layout_below="@+id/edtEmail"
+        android:text="Create Password"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtCreatePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCreatePassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLength="11"
+        android:fontFamily="@font/urbanistbold"
+        android:hint="enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtCreatePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/urbanistbold"
+        android:text="REGISTER"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/already_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/urbanistbold"
+        android:text="ALREADY HAVE AN ACCOUNT?"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/click_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" LOGIN"
+        android:fontFamily="@font/urbanistbold"
+        android:layout_toRightOf="@id/already_txt"
+        android:textColor="@color/lottieColor"
+        android:layout_below="@+id/btnRegister"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

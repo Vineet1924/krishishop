@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lottieColor">
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id :"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/urbanistbold"
+                />
+
+            <TextView
+                android:id="@+id/txtOrderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Id :"
+                android:textSize="20dp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay1"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/roundedbackground"
+            android:backgroundTint="@color/white"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtPaymentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Payment Id : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/PaymentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtPaymentId"
+                android:fontFamily="@font/urbanistbold"
+                android:text="123456789"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PaymentId"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Payment Status : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PaymentId"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtStatus"
+                android:fontFamily="@font/urbanistbold"
+                android:text="done"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtPaymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Status"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Payment Date : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/PaymentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Status"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtPaymentDate"
+                android:fontFamily="@font/urbanistbold"
+                android:text="date"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtPaymentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PaymentDate"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Payment Time : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/PaymentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PaymentDate"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtPaymentTime"
+                android:fontFamily="@font/urbanistbold"
+                android:text="time"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPaymentTime"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Total Paid  : "
+                android:textColor="@color/lottieColor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PaymentTime"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txtTotal"
+                android:fontFamily="@font/urbanistbold"
+                android:text="paid"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_Delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Total"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Download Bill"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_request_quote_24"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

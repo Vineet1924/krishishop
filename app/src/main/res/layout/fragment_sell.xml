@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellFragment"
+    android:background="@color/mainBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/roundedbackground"
+                android:backgroundTint="@color/lottieColor"
+                android:elevation="8dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/urbanistbold"
+                    android:text="Sell Product"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@color/black"
+                    android:src="@drawable/ic_baseline_history_24" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtPName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Product name"
+                android:textSize="20dp"
+                android:fontFamily="@font/urbanistbold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/lay"
+                />
+
+            <EditText
+                android:id="@+id/edtPName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPName"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/white"
+                android:hint="product name"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/txtPDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtPName"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginTop="15dp"
+                android:text="Enter Product Description"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edtPDescription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPDescription"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="product description"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/txtPPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_below="@+id/edtPDescription"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Enter Price"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edtPPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPPrice"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/urbanistbold"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/white"
+                android:hint="product price"
+                android:inputType="number"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/txtPType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtPPrice"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Product Type"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/edtPType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtPType"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/urbanistbold"
+                android:hint="product type"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:id="@+id/txtPCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtPType"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginTop="15dp"
+                android:text="Product Category"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txtPCategory">
+
+                <RadioButton
+                    android:id="@+id/radioFarmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farming Product"
+                    android:fontFamily="@font/urbanistbold"
+                    android:textColor="@color/lottieColor"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioReseller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reseller Product"
+                    android:fontFamily="@font/urbanistbold"
+                    android:textColor="@color/lottieColor"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="8dp"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtPPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Product Picture"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/radioGrp"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgProductUpload"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtPPic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noimg" />
+
+            <Button
+                android:id="@+id/btnSelectPic"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/imgProductUpload"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/urbanistbold"
+                android:padding="8dp"
+                android:text="Select Picture" />
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnUploadProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/btnSelectPic"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/urbanistbold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_shape"
+                android:text="Upload" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
